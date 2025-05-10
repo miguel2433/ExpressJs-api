@@ -1,0 +1,102 @@
+POST http://localhost:1234/product
+Content-Type: application/json
+
+{
+    "name": "nosebrosolopruebas",
+    "stock": 200,
+    "description": "Tuberculosis",
+    "price": 464.50
+}
+
+
+### Llamar a todos los productos
+GET http://localhost:1234/product
+
+
+###Llamar a un producto por id
+GET http://localhost:1234/product/dabf3496-e129-11ef-a364-d050994f0275
+
+
+###Eliminar un producto por id
+DELETE http://localhost:1234/product/38a1bb49-e12c-11ef-a364-d050994f0275 
+
+
+### Actualizando producto por id 
+
+PATCH http://localhost:1234/product/a0ed0c79-c9dd-11ef-98a4-d050994f0275
+Content-Type: application/json
+
+{
+    "name": "Monster"
+}
+
+###----------------------------------------------------------------
+
+### Peticion de todos los paises
+GET http://localhost:1234/nationality
+
+
+
+### Peticion de Pais por Id
+GET http://localhost:1234/nationality/1
+
+
+### Peticion para Crear un pais
+POST http://localhost:1234/nationality
+Content-Type: application/json
+
+{
+    "country": "Brasil"
+}
+
+### Eliminando un pais por id
+DELETE http://localhost:1234/nationality/4
+
+
+### Actualizando un campo de la nacionalidad el nombre
+PATCH http://localhost:1234/nationality/2
+Content-Type: application/json
+
+{
+    "country": "Ramona"
+}
+
+###-----------------------------
+
+### Traer todos los usuarios
+GET http://localhost:1234/user
+
+### Traer usuario por ID
+GET http://localhost:1234/user/73a11ebb-e2f1-11ef-b041-d050994f0275
+
+###Crear Usuario
+POST http://localhost:1234/user/register
+Content-Type: application/json
+
+{
+    "name": "mambo",
+    "email": "miguelitocapito@gmail.com",
+    "password": "20maxi",
+    "idNationality": 3
+}
+
+### Actualizacion por id
+PATCH  http://localhost:1234/user/73a11ebb-e2f1-11ef-b041-d050994f0275
+Content-Type: application/json
+
+{
+    "name": "panchito"
+}
+
+### Eliminar usuario por id
+
+DELETE http://localhost:1234/user/73a11ebb-e2f1-11ef-b041-d050994f0275
+
+### login de un usuario
+POST http://localhost:1234/user/login
+Content-Type: application/json
+
+{
+    "email": "miguelitocapito@gmail.com",
+    "password": "20maxi"
+}

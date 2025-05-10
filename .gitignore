@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+/Api/config.js
+.eslintcache
+/Api/@eslint
