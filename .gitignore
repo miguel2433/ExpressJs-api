@@ -4,4 +4,4 @@ node_modules/
 /Api/config.js
 .eslintcache
 /Api/@eslint
-/Api/local-fyle-system/db.js
+/Api/local-fyle-system/mysql/db.js
